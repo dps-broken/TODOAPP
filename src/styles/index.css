@@ -1,0 +1,62 @@
+:root {
+  /* Light Theme - Updated Glassmorphism Palette */
+  --bg-color: #f9fafc;
+  --bg-gradient: linear-gradient(to right top, #fdfbfb, #ebedee, #d7dce2, #c4cad6, #b1b8ca);
+  --text-color: #1e1e2f;
+  --text-color-light: #555e73;
+  --primary-color: #4f46e5; /* Indigo */
+  
+  /* Glassmorphism card styles */
+  --card-bg: rgba(255, 255, 255, 0.4);
+  --card-border: rgba(255, 255, 255, 0.6);
+  --card-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  --input-bg: rgba(255, 255, 255, 0.65);
+
+  --completed-color: #16a34a; /* Green */
+  --completed-bg: rgba(22, 163, 74, 0.12);
+
+  --deadline-alert-color: #dc2626; /* Red */
+}
+
+[data-theme='dark'] {
+  /* Dark Theme - Updated Glassmorphism Palette */
+  --bg-color: #0f172a;
+  --bg-gradient: linear-gradient(to right top, #0f172a, #1e293b, #334155, #475569, #64748b);
+  --text-color: #f1f5f9;
+  --text-color-light: #cbd5e1;
+  --primary-color: #6366f1; /* Indigo */
+  
+  /* Glassmorphism card styles */
+  --card-bg: rgba(30, 41, 59, 0.4);
+  --card-border: rgba(255, 255, 255, 0.15);
+  --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  --input-bg: rgba(30, 41, 59, 0.7);
+
+  --completed-color: #22c55e; /* Green */
+  --completed-bg: rgba(34, 197, 94, 0.15);
+
+  --deadline-alert-color: #f97316; /* Orange */
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+#root {
+  padding: 2rem;
+}
