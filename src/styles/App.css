@@ -408,4 +408,7 @@
   .sort-select {
     width: 100%;
   }
+  .task-header{
+    flex-direction: column;
+  }
 }
